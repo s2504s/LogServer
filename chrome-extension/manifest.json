@@ -1,0 +1,25 @@
+{
+   "background": {
+      "scripts": [ "background.js" ]
+   },
+   "content_scripts": [ {
+      "js": [ "js/libs/jquery.min.js", "js/const.js", "js/func.js", "js/main.js", "js/messages.js" ],
+      "matches": [ "https://*.ogame.gameforge.com/game/index.php*" ],
+      "run_at": "document_start"
+   } ],
+   "description": "LogServer - storage of combat reports from OGame.",
+   "icons": {
+      "128": "Icon-128.png",
+      "16": "Icon-16.png",
+      "48": "Icon-48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA2RnVrm3dEB1UY2YOR6Oq/DV7edoDDfuU42hJ4Mw5ZDNIhU703smT36cyo65qvTWNe2XyH58BJswADN+ntKMos/h3nZWHbqtCXOpc+VPU/FkmbN1zKr7wu/nEDfxzf7yXNmCAEElYIf1wmdmocfcyfaB8z5bBVlkRkBbNLrR9BiSyfRE1KlQWekd0QuFAr+7RM1MA8OZKXjXpEEFUQkqLQo6Dy6Wat+EYM5TnyYFEt6tLperOW0bKtae6gIWA7OIALGQc1cSx0IpCjVcBV2olVJIWqgjOhXtGC5c3n1ASQIVRupP8rUf3Pyz5Ov4Lzu6ev27clqf4HX/bTFJy5FospQIDAQAB",
+   "manifest_version": 2,
+   "minimum_chrome_version": "32",
+   "name": "LogServer",
+   "permissions": [ "webRequest", "https://*.ogame.gameforge.com/*", "https://logserver.net/*", "https://logserver.org/*" ],
+   "short_name": "LogServer",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "3.6.4",
+   "web_accessible_resources": [ "css/*" ]
+}
